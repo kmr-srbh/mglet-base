@@ -223,6 +223,19 @@
                 "CMAKE_BUILD_TYPE": "Debug"
 
             }
+        },
+        {
+            "name": "lfortran",
+            "hidden": false,
+            "displayName": "LFortran compiler",
+            "description": "Default build options using the LFortran compiler",
+            "cacheVariables": {
+                "CMAKE_C_COMPILER": "clang",
+                "CMAKE_CXX_COMPILER": "clang++",
+                "CMAKE_Fortran_COMPILER": "lfortran",
+                "CMAKE_Fortran_FLAGS": "--implicit-interface --generate-object-code",
+                "CMAKE_EXE_LINKER_FLAGS": "-L/home/saurabh-kumar/Projects/System/lfortran/src/runtime -llfortran_runtime -lm"
+            }
         }
     ]
 }
