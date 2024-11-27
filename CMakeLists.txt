@@ -14,12 +14,12 @@ FortranCInterface_VERIFY(CXX)
 
 find_package(ZLIB REQUIRED)
 
-find_package(MPI COMPONENTS C Fortran REQUIRED)
-if(MPI_Fortran_HAVE_F08_MODULE)
-    message(STATUS "MPI Library supports MPI_f08")
-else()
-    message(FATAL_ERROR "MPI Library does not support MPI_f08")
-endif()
+# find_package(MPI COMPONENTS C Fortran REQUIRED)
+# if(MPI_Fortran_HAVE_F08_MODULE)
+#     message(STATUS "MPI Library supports MPI_f08")
+# else()
+#     message(FATAL_ERROR "MPI Library does not support MPI_f08")
+# endif()
 
 set(HDF5_PREFER_PARALLEL TRUE)
 set(HDF5_USE_STATIC_LIBRARIES FALSE)
